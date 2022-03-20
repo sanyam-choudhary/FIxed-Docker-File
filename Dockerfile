@@ -20,5 +20,6 @@ RUN npm install sfdx-cli --global
 RUN sfdx --version
 
 # install SFDX-Git-Delta plugin - https://github.com/scolladon/sfdx-git-delta
+#The plugin via docker is not working so need to install directly in the yml.
 RUN echo y | sfdx plugins:install sfdx-git-delta
 RUN sfdx plugins
